@@ -82,6 +82,8 @@ Make sure you have Python 3.8+ installed. You will also need `pip` to install th
 
 The default model used is `"sshleifer/distilbart-cnn-12-6"`, which is highly optimized for news and generic article summarization. However, the code is entirely modular! You can swap this out for whichever Hugging Face Seq2Seq model suits your specific use case best.
 
+> **⚠️ Deployment Disclaimer:** If you deploy this app to shared cloud environments (like Streamlit Community Cloud or Hugging Face Spaces), YouTube may temporarily block transcript requests because thousands of apps share the same IP address range. The app includes graceful error handling if this occurs, but for high-volume production, a dedicated IP or proxy is recommended.
+
 ---
 
 

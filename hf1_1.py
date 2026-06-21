@@ -91,10 +91,11 @@ if get_sum and full_yt:
         video_id = full_yt
 
     if video_id:
-        get_transcript(video_id)
-    
-        with open("ms_kitco.txt", "r", encoding="utf-8") as f:
-            tx = f.read()
+        success, tx = get_transcript(video_id)
+        
+        if not success:
+            st.error(f"⚠️ {tx}")
+            st.stop()
         
         with st.spinner("Downloading/Loading the model (this might take a few minutes the first time)..."):
             tokenizer = AutoTokenizer.from_pretrained("sshleifer/distilbart-cnn-12-6")
