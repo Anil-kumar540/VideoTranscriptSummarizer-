@@ -58,7 +58,7 @@ Make sure you have Python 3.8+ installed. You will also need `pip` to install th
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/VideoTranscriptSummarizer.git
+   git clone https://github.com/Anil-kumar540/VideoTranscriptSummarizer-.git
    cd VideoTranscriptSummarizer
    ```
 
